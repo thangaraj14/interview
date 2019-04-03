@@ -34,12 +34,12 @@ public class TwoStringInterleavingToFormThird {
                     T[i][j] = true;
                 }
                 else if(i == 0){
-                    if(str3[l] == str2[j-1]){
+                    if(str3[l] == str1[j-1]){
                         T[i][j] = T[i][j-1];
                     }
                 }
                 else if(j == 0){
-                    if(str1[i-1] == str3[l]){
+                    if(str2[i-1] == str3[l]){
                         T[i][j] = T[i-1][j];
                     }
                 }
